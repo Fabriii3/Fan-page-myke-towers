@@ -1,3 +1,8 @@
 body {
-    background-color: darkblue;
+    background-color: cornflowerblue;
+}
+
+p {
+    color: antiquewhite;
+    font-size: 2rem;
 }
