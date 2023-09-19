@@ -1,0 +1,10 @@
+ @import "./variables";
+@import "./utilities/mixins";
+ @import "./reset";
+@import "./components/botones";
+ @import "./components/fuentes";
+ @import "./layout/index-inicio";
+@import "./layout/header";
+ @import "./layout/main-index";
+ @import "./layout/footer";
+@import "./layout/query";

@@ -1,0 +1,11 @@
+ #index-inicio {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr repeat(2 , 2fr) 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "header header"
+    " main main"
+    " main main"
+    " footer footer" ;
+}

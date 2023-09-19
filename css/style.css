@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@1,87,562&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@1,87,562&family=Roboto&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+#index-inicio {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr repeat(2, 2fr) 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "header header" " main main" " main main" " footer footer";
+}
+
+#headerindex {
+  background-color: #C4FFF9;
+  grid-area: header;
+  padding: 0%;
+}
+#headerindex .topbar div {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  background-color: black;
+  color: wheat;
+  display: flex;
+  justify-content: space-between;
+}
+#headerindex .topbar div p {
+  margin: 10px 30px 10px 30px;
+}
+#headerindex .topbar div .top-nav-contacto p {
+  margin: 10px 20px 10px 20px;
+}
+#headerindex div #logo {
+  padding: 10px;
+  padding-left: 150px;
+}
+#headerindex div #logo a #logoimg {
+  height: 100px;
+  width: 200px;
+}
+#headerindex a {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: bold;
+}
+#headerindex nav a {
+  color: black;
+  border-radius: 10px;
+}
+
+#mainindex {
+  background-color: darkcyan;
+  grid-area: main;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "seccionUno seccionUno" "seccionDos seccionDos";
+}
+
+#footerindex {
+  background-color: gold;
+  grid-area: footer;
+}
+
+/* Escritorio primero o destok first */
+@media (min-width: 320px) and (max-width: 991px) {
+  .topbar {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,56 @@
+@mixin caja-contacto {
+    background-color: #E3F2FD;
+            margin-top: 50px;
+            border-radius: 10px ;
+            border: 2px solid black;
+            padding: 20px 50px 20px 20px;
+            margin: 20px;
+            p {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+                font-weight: 600;
+                font-weight: bold;
+                font-style: italic;
+            }
+            span{
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+                font-weight: bold;
+                font-style: italic;
+            }
+
+                img{
+                    height:30px;
+                    margin: 5px;
+                }
+            
+}
+
+
+@mixin flexbox($direction, $wrap, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+// @mixin wsp-alcostado {
+//     span .wsapaside {
+//         position: fixed;
+//         left: 93%;
+//         bottom: 15%;
+//       }
+//       span .wsapaside .imglogowsap {
+//         height: 70px;
+//         width: 100px;
+//         border-radius: 80px;
+//       }
+// }
