@@ -28,24 +28,8 @@ li {
 }
 
 #headerindex {
-  background-color: #C4FFF9;
+  background-color: whitesmoke;
   grid-area: header;
-  padding: 0%;
-}
-#headerindex .topbar div {
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: bold;
-  background-color: black;
-  color: wheat;
-  display: flex;
-  justify-content: space-between;
-}
-#headerindex .topbar div p {
-  margin: 10px 30px 10px 30px;
-}
-#headerindex .topbar div .top-nav-contacto p {
-  margin: 10px 20px 10px 20px;
 }
 #headerindex div #logo {
   padding: 10px;
@@ -69,14 +53,74 @@ li {
   background-color: darkcyan;
   grid-area: main;
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "seccionUno seccionUno" "seccionDos seccionDos";
+  grid-template-rows: 2fr, 1fr, 1.5fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "seccionUno" "seccionDos " "seccionTres";
 }
 
 #footerindex {
-  background-color: gold;
+  background-color: whitesmoke;
   grid-area: footer;
+  display: grid;
+  grid-template-rows: 2fr, 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "logo redes contacto" "copy copy copy";
+}
+#footerindex .logo-footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: norawp;
+  justify-content: center;
+  align-items: center;
+  grid-area: logo;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+}
+#footerindex .logo-footer .img-logof {
+  height: 100px;
+  width: 200px;
+}
+#footerindex .redes-footer {
+  grid-area: redes;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: norawp;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-style: italic;
+}
+#footerindex .redes-footer .titulo-redes {
+  font-size: 1.5rem;
+}
+#footerindex .redes-footer img {
+  width: 40px;
+  height: 50px;
+}
+#footerindex .contacto-footer {
+  grid-area: contacto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: norawp;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-style: italic;
+}
+#footerindex .contacto-footer .titulo-contacto {
+  font-size: 1.5rem;
+}
+#footerindex .copy-footer {
+  grid-area: copy;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: norawp;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1rem;
 }
 
 /* Escritorio primero o destok first */

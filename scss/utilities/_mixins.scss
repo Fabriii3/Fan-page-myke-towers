@@ -42,6 +42,11 @@
     justify-content: center;
 }
 
+@mixin fontbi {
+    font-weight: bold;
+    font-style: italic;
+}
+
 // @mixin wsp-alcostado {
 //     span .wsapaside {
 //         position: fixed;
