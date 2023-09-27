@@ -1,5 +1,5 @@
 #headerindex{
-  background-color:whitesmoke;
+  background-color:black;
   grid-area:header;
   div{
       #logo{
@@ -7,23 +7,22 @@
           padding-left: 150px;
             a{
             #logoimg{
-              height: 100px; 
-              width: 200px;
+              height: 150px; 
+              width: 350px;
               }
             }
          }
       }
       
-      a{
-          font-size: 1.2rem;
-          font-style: italic;
-          font-weight: bold;
-      }
-
       nav {
         a{
-          color:black;
+          font-size: 1.2rem;
+          @include fontbi;
+          color:white;
           border-radius: 10px;
+          &:hover{
+            color:goldenrod;
+          }
         }
       }
        

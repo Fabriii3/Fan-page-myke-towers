@@ -28,7 +28,7 @@ li {
 }
 
 #headerindex {
-  background-color: whitesmoke;
+  background-color: black;
   grid-area: header;
 }
 #headerindex div #logo {
@@ -36,21 +36,24 @@ li {
   padding-left: 150px;
 }
 #headerindex div #logo a #logoimg {
-  height: 100px;
-  width: 200px;
-}
-#headerindex a {
-  font-size: 1.2rem;
-  font-style: italic;
-  font-weight: bold;
+  height: 150px;
+  width: 350px;
 }
 #headerindex nav a {
-  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
   border-radius: 10px;
+}
+#headerindex nav a:hover {
+  color: goldenrod;
 }
 
 #mainindex {
-  background-color: darkcyan;
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1VTDWL2PiFFy1SQ2EULDkpnUpSxpuluBT7KXNGWK_h6cvKVxXGhanM9NWO-uI8-USOG2M7Hx9gngD-tP-UZ8irc-47jNrPlhVZan9pbOyNQlB15WUOlZ3G_zN2lPASQLcZx4sK47ZSAVkHJ_mTLAu9qGm_dz29fJ3o6UMPWcm3PTIpf7Nnufd-B56Xw3o/s1999/unnamed%20-%202023-09-08T175548.963.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   grid-area: main;
   display: grid;
   grid-template-rows: 2fr, 1fr, 1.5fr;
@@ -59,7 +62,8 @@ li {
 }
 
 #footerindex {
-  background-color: whitesmoke;
+  background-color: black;
+  color: white;
   grid-area: footer;
   display: grid;
   grid-template-rows: 2fr, 1fr;
@@ -73,13 +77,13 @@ li {
   justify-content: center;
   align-items: center;
   grid-area: logo;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   font-style: italic;
 }
 #footerindex .logo-footer .img-logof {
-  height: 100px;
-  width: 200px;
+  height: 150px;
+  width: 350px;
 }
 #footerindex .redes-footer {
   grid-area: redes;
@@ -93,10 +97,11 @@ li {
 }
 #footerindex .redes-footer .titulo-redes {
   font-size: 1.5rem;
+  padding-left: 50px;
 }
 #footerindex .redes-footer img {
-  width: 40px;
-  height: 50px;
+  width: 60px;
+  height: 40px;
 }
 #footerindex .contacto-footer {
   grid-area: contacto;
@@ -124,10 +129,5 @@ li {
 }
 
 /* Escritorio primero o destok first */
-@media (min-width: 320px) and (max-width: 991px) {
-  .topbar {
-    display: none;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */

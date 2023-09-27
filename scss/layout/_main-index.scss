@@ -1,5 +1,7 @@
 #mainindex  {
-    background-color: darkcyan;
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1VTDWL2PiFFy1SQ2EULDkpnUpSxpuluBT7KXNGWK_h6cvKVxXGhanM9NWO-uI8-USOG2M7Hx9gngD-tP-UZ8irc-47jNrPlhVZan9pbOyNQlB15WUOlZ3G_zN2lPASQLcZx4sK47ZSAVkHJ_mTLAu9qGm_dz29fJ3o6UMPWcm3PTIpf7Nnufd-B56Xw3o/s1999/unnamed%20-%202023-09-08T175548.963.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
     grid-area:main;
     display: grid;
     grid-template-rows: 2fr ,1fr , 1.5fr;
