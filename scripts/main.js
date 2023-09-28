@@ -26,7 +26,9 @@ if(verificacion === 3 ){
 
     console.log("---------------------------------------------------")
 
-    let opciones = prompt("Selecciona una opcion (puedes verlas en la consola del navegador)");
+    let opciones = prompt("Selecciona una opcion" + " | " +
+     "1 : Escuchar la cancion mas con mas reproducciones" + " | " + "2 : Ver listado de las mas reproducidas " + " | " + "3 : Ver Biografia de Mike Towers" + " 3| " + 
+      "4 : Ver todas las canciones y albunes" + " | " +  "5 : Buscar Canciones" + " | " + "6 : Salir " + " | " +"(Puedes verlo en la consola del navegador)" );
 switch (opciones) {
     case "1":
         alert("La cancion mas repoducida es : " + "Si Se da");
