@@ -4,14 +4,28 @@
      background-size: cover;
     grid-area:main;
     display: grid;
-    grid-template-rows: 2fr ,1fr , 1.5fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: 
-    "seccionUno"
-    "seccionDos " 
-    "seccionTres" ;
+    "bienvenida" ;
 
-
+.escuchar-canciones {
+    grid-area: bienvenida;
+    @include fontbi ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    .btn-escuchar-canciones{
+        font-size: 2rem;
+           color: whitesmoke;
+           &:hover{
+            color:yellow;
+           }
+    }
+}
 
     
    }

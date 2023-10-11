@@ -19,14 +19,6 @@ li {
   list-style-type: none;
 }
 
-#index-inicio {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr repeat(2, 2fr) 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "header header" " main main" " main main" " footer footer";
-}
-
 #headerindex {
   background-color: black;
   grid-area: header;
@@ -50,15 +42,94 @@ li {
   color: goldenrod;
 }
 
+#index-inicio {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr repeat(2, 2fr) 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "header header" " main main" " main main" " footer footer";
+}
+
 #mainindex {
   background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1VTDWL2PiFFy1SQ2EULDkpnUpSxpuluBT7KXNGWK_h6cvKVxXGhanM9NWO-uI8-USOG2M7Hx9gngD-tP-UZ8irc-47jNrPlhVZan9pbOyNQlB15WUOlZ3G_zN2lPASQLcZx4sK47ZSAVkHJ_mTLAu9qGm_dz29fJ3o6UMPWcm3PTIpf7Nnufd-B56Xw3o/s1999/unnamed%20-%202023-09-08T175548.963.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   grid-area: main;
   display: grid;
-  grid-template-rows: 2fr, 1fr, 1.5fr;
+  grid-template-rows: 1fr;
   grid-template-columns: 1fr;
-  grid-template-areas: "seccionUno" "seccionDos " "seccionTres";
+  grid-template-areas: "bienvenida";
+}
+#mainindex .escuchar-canciones {
+  grid-area: bienvenida;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+#mainindex .escuchar-canciones .btn-escuchar-canciones {
+  font-size: 2rem;
+  color: whitesmoke;
+}
+#mainindex .escuchar-canciones .btn-escuchar-canciones:hover {
+  color: yellow;
+}
+
+#maincomprar .catalogoproductos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#maincomprar .catalogoproductos #titulocatalgo {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin: 30px;
+  font-size: 30px;
+}
+#maincomprar .card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+  transition: transform 1s;
+}
+#maincomprar .card:hover {
+  transform: scale(1.1) translateY(-40px);
+}
+#maincomprar .card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#maincomprar .card .front {
+  box-shadow: 0 5px 10px #000;
+}
+#maincomprar .card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#maincomprar .card .front p {
+  font-style: italic;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: black;
+  background-color: wheat;
+  text-align: center;
+  border-radius: 10px;
 }
 
 #footerindex {

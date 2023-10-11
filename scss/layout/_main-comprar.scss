@@ -1,0 +1,59 @@
+#maincomprar{
+   .catalogoproductos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    #titulocatalgo {
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        margin: 30px;
+        font-size: 30px;
+   }
+  }
+
+.card {
+   position: relative;
+   width: 300px;
+   height: 350px;
+   margin: 20px;
+   transition: transform 1s;
+   &:hover{
+      transform: scale(1.1) translateY(-40px);
+   }
+   .face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      }
+      .front {
+         box-shadow: 0 5px 10px #000;
+         img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            // object-fit: cover;
+            }
+            p {
+               font-style: italic;
+               font-weight: bold;
+               position: absolute;
+               bottom: 0;
+               width: 100%;
+               height: 45px;
+               line-height: 45px;
+               color:black;
+               background-color:wheat;
+               text-align: center;
+               border-radius: 10px;
+            }
+         }
+   }
+   
+
+}
