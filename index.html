@@ -15,13 +15,9 @@
  rel="stylesheet" 
  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
  crossorigin="anonymous">
- <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
- integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
- crossorigin="anonymous"
-  referrerpolicy="no-referrer" /> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link rel="stylesheet" href="./css/style.css">
-<script src="app.js" defer></script>
   <title> Myke Towers Fan Page </title>
 </head>
   <body id="index-inicio">
@@ -45,16 +41,18 @@
                   <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./pages/comprar.html">Escuchar canciones</a>
+                  <a class="nav-link" href="./pages/reproducir.html">Escuchar canciones</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Mensajes de fans</a>
+                  <a class="nav-link" href="#">Comunidad</a>
                 </li>
-                <!-- <li class=" nav-item">
-                 <button class="switch" id="switch"></button>
-                    <span><i class="fa-solid fa-sun"></i></span>
-                    <span><i class="fa-solid fa-moon"></i></span>
-                </li> -->
+                <li class="nav-item">
+                <div id="switch-nav" class="form-check form-switch">
+                  <i class="bi bi-moon-fill"></i>
+                    <input  class="form-check-input" type="checkbox" role="switch">
+                  <i id="sun-icon" class="bi bi-sun-fill"></i>
+                </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -64,19 +62,22 @@
   
       <main id="mainindex">
           <section class="escuchar-canciones">
-               <p class="animate__animated animate__slideInRight" > Bienvenid@</p>
+               <p class="animate__animated animate__slideInRight" > Bienvenid@ </p>
                <p class="btn-escuchar-canciones animate__animated animate__slideInRight"  > Escuchar Canciones </p>
+               <p class="btn-comunidad animate__animated animate__slideInRight"  > Comunidad </p>
           </section>
-
      </main>
   
   
     <footer id="footerindex">
 
-       <div class="logo-footer">
-          <img class="img-logof" src="./assets/images/MYKE-TOWERS.png" alt="">
-         <ul>
-          <li> La Vida Es Un Tour </li>
+      <div class="reproducir-footer">
+        <ul>
+          <li><p class="titulo-reproducir">Reproducir</p></li>
+          <a href="./pages/reproducir.html"><li>Lala</li></a>
+          <a href="./pages/reproducir.html"><li>Explicito</li></a>
+          <a href="./pages/reproducir.html"><li>Bandido</li></a>
+          <a href="./pages/reproducir.html"><li>Otras</li></a>
         </ul>
        </div>
 

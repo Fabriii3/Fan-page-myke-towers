@@ -1,4 +1,7 @@
 #maincomprar{
+   background-image: url("https://scontent.faep4-2.fna.fbcdn.net/v/t1.6435-9/129736807_868602833946450_7174310722850463643_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=9g5AN1YhtbsAX9z3i-k&_nc_ht=scontent.faep4-2.fna&oh=00_AfAw-IOQJ_Nsik5YzJC3kxqCuzgCh4_X9V1BRHojUZgYsg&oe=654EBA88");
+   background-repeat: no-repeat;
+   background-size: cover;
    .catalogoproductos{
     width: 100%;
     display: flex;
@@ -10,15 +13,15 @@
         text-align: center;
         font-weight: bold;
         margin: 30px;
-        font-size: 30px;
+        font-size: 3rem;
    }
   }
 
 .card {
    position: relative;
-   width: 300px;
-   height: 350px;
-   margin: 20px;
+   width: 320px;
+   height: 400px;
+   margin: 30px;
    transition: transform 1s;
    &:hover{
       transform: scale(1.1) translateY(-40px);

@@ -1,0 +1,15 @@
+:root {
+    --clr-bcg: #BA181B;
+    --clr-font:  white;
+}
+
+.dark-mode {
+    --clr-bcg: black;
+    --clr-font: white;
+}
+
+body {
+    color: var(--clr-font);
+    background-color: var(--clr-bcg);
+
+}

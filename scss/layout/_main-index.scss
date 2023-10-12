@@ -17,11 +17,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 4rem;
+    font-size: 5rem;
+    p{
+        padding-right: 150px;
+    }
     .btn-escuchar-canciones{
-        font-size: 2rem;
+        font-size: 4rem;
            color: whitesmoke;
+            padding-right: 280px;
            &:hover{
+            color:yellow;
+           }
+    }
+    .btn-comunidad{
+        font-size: 4rem;
+        color: whitesmoke;
+         padding-right: 400px;
+        &:hover{
             color:yellow;
            }
     }

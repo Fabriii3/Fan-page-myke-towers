@@ -19,8 +19,22 @@ li {
   list-style-type: none;
 }
 
+:root {
+  --clr-bcg: #BA181B;
+  --clr-font: white;
+}
+
+.dark-mode {
+  --clr-bcg: black;
+  --clr-font: white;
+}
+
+body {
+  color: var(--clr-font);
+  background-color: var(--clr-bcg);
+}
+
 #headerindex {
-  background-color: black;
   grid-area: header;
 }
 #headerindex div #logo {
@@ -32,14 +46,20 @@ li {
   width: 350px;
 }
 #headerindex nav a {
-  font-size: 1.2rem;
+  color: white;
+  font-size: 1.5rem;
   font-weight: bold;
   font-style: italic;
-  color: white;
-  border-radius: 10px;
 }
 #headerindex nav a:hover {
-  color: goldenrod;
+  color: yellow;
+}
+#headerindex nav #switch-nav {
+  color: white;
+}
+#headerindex nav #switch-nav #sun-icon {
+  position: relative;
+  right: 84px;
 }
 
 #index-inicio {
@@ -69,16 +89,33 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
+  font-size: 5rem;
+}
+#mainindex .escuchar-canciones p {
+  padding-right: 150px;
 }
 #mainindex .escuchar-canciones .btn-escuchar-canciones {
-  font-size: 2rem;
+  font-size: 4rem;
   color: whitesmoke;
+  padding-right: 280px;
 }
 #mainindex .escuchar-canciones .btn-escuchar-canciones:hover {
   color: yellow;
 }
+#mainindex .escuchar-canciones .btn-comunidad {
+  font-size: 4rem;
+  color: whitesmoke;
+  padding-right: 400px;
+}
+#mainindex .escuchar-canciones .btn-comunidad:hover {
+  color: yellow;
+}
 
+#maincomprar {
+  background-image: url("https://scontent.faep4-2.fna.fbcdn.net/v/t1.6435-9/129736807_868602833946450_7174310722850463643_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=9g5AN1YhtbsAX9z3i-k&_nc_ht=scontent.faep4-2.fna&oh=00_AfAw-IOQJ_Nsik5YzJC3kxqCuzgCh4_X9V1BRHojUZgYsg&oe=654EBA88");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #maincomprar .catalogoproductos {
   width: 100%;
   display: flex;
@@ -90,13 +127,13 @@ li {
   text-align: center;
   font-weight: bold;
   margin: 30px;
-  font-size: 30px;
+  font-size: 3rem;
 }
 #maincomprar .card {
   position: relative;
-  width: 300px;
-  height: 350px;
-  margin: 20px;
+  width: 320px;
+  height: 400px;
+  margin: 30px;
   transition: transform 1s;
 }
 #maincomprar .card:hover {
@@ -133,28 +170,31 @@ li {
 }
 
 #footerindex {
-  background-color: black;
-  color: white;
   grid-area: footer;
   display: grid;
   grid-template-rows: 2fr, 1fr;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "logo redes contacto" "copy copy copy";
+  grid-template-areas: "reproducir redes contacto" "copy copy copy";
 }
-#footerindex .logo-footer {
+#footerindex .reproducir-footer {
+  grid-area: reproducir;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: norawp;
   justify-content: center;
   align-items: center;
-  grid-area: logo;
-  font-size: 1.5rem;
   font-weight: bold;
   font-style: italic;
 }
-#footerindex .logo-footer .img-logof {
-  height: 150px;
-  width: 350px;
+#footerindex .reproducir-footer .titulo-reproducir {
+  font-size: 1.8rem;
+}
+#footerindex .reproducir-footer li {
+  color: white;
+  font-size: 1.5rem;
+}
+#footerindex .reproducir-footer li:hover {
+  color: yellow;
 }
 #footerindex .redes-footer {
   grid-area: redes;
@@ -167,12 +207,12 @@ li {
   font-style: italic;
 }
 #footerindex .redes-footer .titulo-redes {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding-left: 50px;
 }
 #footerindex .redes-footer img {
-  width: 60px;
-  height: 40px;
+  width: 70px;
+  height: 50px;
 }
 #footerindex .contacto-footer {
   grid-area: contacto;
@@ -185,6 +225,9 @@ li {
   font-style: italic;
 }
 #footerindex .contacto-footer .titulo-contacto {
+  font-size: 1.8rem;
+}
+#footerindex .contacto-footer li {
   font-size: 1.5rem;
 }
 #footerindex .copy-footer {
@@ -196,7 +239,7 @@ li {
   align-items: center;
   font-weight: bold;
   font-style: italic;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 /* Escritorio primero o destok first */
