@@ -20,7 +20,7 @@ li {
 }
 
 :root {
-  --clr-bcg: #BA181B;
+  --clr-bcg: #B1A7A6;
   --clr-font: white;
 }
 
@@ -131,9 +131,9 @@ body {
 }
 #maincomprar .card {
   position: relative;
-  width: 320px;
-  height: 400px;
-  margin: 30px;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
   transition: transform 1s;
 }
 #maincomprar .card:hover {
