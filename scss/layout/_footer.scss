@@ -1,12 +1,21 @@
 #footerindex {
   grid-area:footer;
   display: grid;
-  grid-template-rows:  2fr , 1fr;
-  grid-template-columns: repeat(3 ,1fr);
+  grid-template-rows: 2fr , 1fr;
+  grid-template-columns: repeat(4 ,1fr);
   grid-template-areas: 
-    "reproducir redes contacto"
-    "copy copy copy"
+    "logo reproducir redes contacto"
+    "copy copy copy copy"
      ;
+    
+.logo-footer{
+  display: flex;
+  img{
+    height:250px;
+    width:450px;
+    padding-left: 150px;
+  }
+}
 
    .reproducir-footer{
     grid-area: reproducir;
@@ -56,5 +65,12 @@
   @include fontbi;
   font-size: 1.2rem;
 }
-
+.volver-arriba{
+    @include fontbi;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    a{
+      color: white;
+    }
+  }
 }

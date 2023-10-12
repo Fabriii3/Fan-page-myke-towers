@@ -1,43 +1,123 @@
-#mainindex  {
-    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1VTDWL2PiFFy1SQ2EULDkpnUpSxpuluBT7KXNGWK_h6cvKVxXGhanM9NWO-uI8-USOG2M7Hx9gngD-tP-UZ8irc-47jNrPlhVZan9pbOyNQlB15WUOlZ3G_zN2lPASQLcZx4sK47ZSAVkHJ_mTLAu9qGm_dz29fJ3o6UMPWcm3PTIpf7Nnufd-B56Xw3o/s1999/unnamed%20-%202023-09-08T175548.963.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
+#mainindex {
     grid-area:main;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 1fr ;
+    grid-template-columns: 1fr 1fr ;
     grid-template-areas: 
-    "bienvenida" ;
+    "bienvenida bienvenida"
+    "reproductor reproductor"
+    "comunidad comunidad " ;
 
-.escuchar-canciones {
+#inicio {
+    background-image: url("https://www.primerahora.com/resizer/TlazC1SSrLbdoXgYwEF9qfjKddY=/2560x0/filters:quality(75):format(jpeg):focal(2807x466:2817x456)/cloudfront-us-east-1.images.arcpublishing.com/gfrmedia/RJJ6QAWQPNAAHPMMFIWZ3SZNHM.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-area: bienvenida;
     @include fontbi ;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    font-size: 5rem;
-    p{
-        padding-right: 150px;
-    }
+    align-items:start;
+    font-size: 6rem;
     .btn-escuchar-canciones{
         font-size: 4rem;
-           color: whitesmoke;
-            padding-right: 300px;
-           &:hover{
-            color:yellow;
-           }
-    }
+            a {
+                color:white;
+                &:hover{
+                    color:yellow;
+                   }
+                 }        
+             }
     .btn-comunidad{
         font-size: 4rem;
-        color: whitesmoke;
-         padding-right: 400px;
-        &:hover{
-            color:yellow;
-           }
+         a {
+            color:white;
+            &:hover{
+                color:yellow;
+             }
+         }
     }
 }
 
-    
+#index-reproductor{
+    grid-area:reproductor;
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1VTDWL2PiFFy1SQ2EULDkpnUpSxpuluBT7KXNGWK_h6cvKVxXGhanM9NWO-uI8-USOG2M7Hx9gngD-tP-UZ8irc-47jNrPlhVZan9pbOyNQlB15WUOlZ3G_zN2lPASQLcZx4sK47ZSAVkHJ_mTLAu9qGm_dz29fJ3o6UMPWcm3PTIpf7Nnufd-B56Xw3o/s1999/unnamed%20-%202023-09-08T175548.963.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .catalogoproductos{
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ 
+     #titulocatalgo {
+         width: 100%;
+         text-align: center;
+         font-weight: bold;
+         margin: 30px;
+         font-size: 3rem;
+    }
    }
+ 
+ .card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    transition: transform 1s;
+    &:hover{
+       transform: scale(1.1) translateY(-40px);
+    }
+    .face {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       backface-visibility: hidden;
+       border-radius: 10px;
+       overflow: hidden;
+       }
+       .front {
+          box-shadow: 0 5px 10px #000;
+          img {
+             position: absolute;
+             width: 100%;
+             height: 100%;
+             // object-fit: cover;
+             }
+             p {
+                font-style: italic;
+                font-weight: bold;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 45px;
+                line-height: 45px;
+                color:black;
+                background-color:wheat;
+                text-align: center;
+                border-radius: 10px;
+             }
+          }
+    }
+    
+ 
+ }
+   
+ #index-comunidad {
+    grid-area:comunidad;
+    background-image: url("https://scontent.faep4-2.fna.fbcdn.net/v/t1.6435-9/129736807_868602833946450_7174310722850463643_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=9g5AN1YhtbsAX9z3i-k&_nc_ht=scontent.faep4-2.fna&oh=00_AfAw-IOQJ_Nsik5YzJC3kxqCuzgCh4_X9V1BRHojUZgYsg&oe=654EBA88");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+}

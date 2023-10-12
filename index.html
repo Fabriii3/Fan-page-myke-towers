@@ -26,7 +26,7 @@
      
     <header id="headerindex" class="container-fluid">
       <div class="row h-50">
-        <div class="col-sm-12 row-lg-3 col-xl-6 row-xxl-7" id="logo"> <a href="./index.html"> <img id="logoimg"
+        <div class="col-sm-12 row-lg-3 col-xl-6 row-xxl-7" id="logo"> <a href="./index.html#headerindex"> <img id="logoimg"
               src="./assets/images/logomt.png" alt="Logo de la marca"> </a>
         </div>
         <nav class="col-sm-12 row-lg-9 col-xl-6 row-xxl-5 navbar navbar-expand-lg ">
@@ -38,13 +38,14 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class=" d-flex justify-content-evenly align-items-center h-100 navbar-nav w-100 ">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                  <a class="nav-link" aria-current="page" href="./index.html#inicio">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./pages/reproducir.html">Escuchar canciones</a>
+                  <a class="nav-link" href="./index.html#index-reproductor">Escuchar canciones</a>
+                 
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Comunidad</a>
+                  <a class="nav-link" href="./index.html#index-comunidad">Comunidad</a>
                 </li>
                 <li class="nav-item">
                 <div id="switch-nav" class="form-check form-switch">
@@ -61,15 +62,100 @@
     </header>
   
       <main id="mainindex">
-          <section class="escuchar-canciones">
+
+          <section id="inicio">
                <p class="animate__animated animate__slideInRight" > Bienvenid@ </p>
-               <p class="btn-escuchar-canciones animate__animated animate__slideInRight"  > Escuchar Canciones </p>
-               <p class="btn-comunidad animate__animated animate__slideInRight"  > Comunidad </p>
+               <p class="btn-escuchar-canciones animate__animated animate__slideInRight" > 
+                <a href="./index.html#index-reproductor"> Escuchar Canciones </a></p>
+               <p class="btn-comunidad animate__animated animate__slideInRight" > 
+                 <a  href="./index.html#index-comunidad"> Comunidad </a> </p>
           </section>
+
+          <section id="index-reproductor">
+            <div class="catalogoproductos">
+              <div id="titulocatalgo" class="animate__animated animate__backInLeft"> CATALOGO DE CANCIONES </div>
+          
+              <div class="card">
+                <div class="face front "> <img src="./assets/images/duro.png" alt="...">
+                  <p> <a href="https://web.whatsapp.com/" target="_blank">Reproducir</a> </p>
+                </div>
+              </div>
+          
+              <div class="card">
+                <div class="face front "> <img src="./assets/images/duro.png" alt="...">
+                  <p> <a href="https://web.whatsapp.com/" target="_blank">Reproducir</a> </p>
+                </div>
+              </div>
+          
+          
+              <div class="card">
+                <div class="face front "> <img src="./assets/images/duro.png" alt="...">
+                  <p> <a href="https://web.whatsapp.com/" target="_blank">Reproducir</a> </p>
+                </div>
+              </div>
+          
+              <div class="card">
+                <div class="face front "> <img src="./assets/images/duro.png" alt="...">
+                  <p> <a href="https://web.whatsapp.com/" target="_blank">Reproducir</a> </p>
+                </div>
+              </div>
+          
+          
+              <div class="card">
+                <div class="face front "> <img src="./assets/images/duro.png" alt="...">
+                  <p> <a href="https://web.whatsapp.com/" target="_blank">Reproducir</a> </p>
+                </div>
+              </div>
+          
+          
+              <div class="card">
+                <div class="face front "> <img src="./assets/images/duro.png" alt="...">
+                  <p> <a href="https://web.whatsapp.com/" target="_blank">Reproducir</a> </p>
+                </div>
+              </div>
+          
+              <div class="card">
+                <div class="face front "> <img src="./assets/images/duro.png" alt="...">
+                  <p> <a href="https://web.whatsapp.com/" target="_blank">Reproducir</a> </p>
+                </div>
+              </div>
+          
+          
+              <div class="card">
+                <div class="face front "> <img src="./assets/images/duro.png" alt="...">
+                  <p> <a href="https://web.whatsapp.com/" target="_blank">Reproducir</a> </p>
+                </div>
+              </div>
+          
+          
+              <div class="card">
+                <div class="face front "> <img src="./assets/images/duro.png" alt="...">
+                  <p> <a href="https://web.whatsapp.com/" target="_blank">Reproducir</a> </p>
+                </div>
+              </div>
+          
+          
+              <div class="card">
+                <div class="face front "> <img src="./assets/images/duro.png" alt="...">
+                  <p> <a href="https://web.whatsapp.com/" target="_blank">Reproducir</a> </p>
+                </div>
+              </div>
+          
+            </div>
+          </section>
+          
+          <section id="index-comunidad">
+          
+          </section>
+          
      </main>
   
   
     <footer id="footerindex">
+
+      <div class="logo-footer">
+           <img src="./assets/images/logomt.png" alt="">
+      </div>
 
       <div class="reproducir-footer">
         <ul>
@@ -115,6 +201,9 @@
 
        <div class="copy-footer">
         <p>&copy; 2023 Myke Towers Fan Page | Derechos Reservados</p>
+        <p class="volver-arriba">
+          <a  href="./index.html#headerindex"> | Volver al incio</a>
+         </p>
        </div>
     </footer>
 

@@ -65,81 +65,78 @@ body {
 #index-inicio {
   height: 100vh;
   display: grid;
-  grid-template-rows: 1fr repeat(2, 2fr) 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "header header" " main main" " main main" " footer footer";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "header header " "main main " "main main  " "footer footer";
 }
 
 #mainindex {
-  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1VTDWL2PiFFy1SQ2EULDkpnUpSxpuluBT7KXNGWK_h6cvKVxXGhanM9NWO-uI8-USOG2M7Hx9gngD-tP-UZ8irc-47jNrPlhVZan9pbOyNQlB15WUOlZ3G_zN2lPASQLcZx4sK47ZSAVkHJ_mTLAu9qGm_dz29fJ3o6UMPWcm3PTIpf7Nnufd-B56Xw3o/s1999/unnamed%20-%202023-09-08T175548.963.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   grid-area: main;
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-  grid-template-areas: "bienvenida";
+  grid-template-rows: 2fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "bienvenida bienvenida" "reproductor reproductor" "comunidad comunidad ";
 }
-#mainindex .escuchar-canciones {
+#mainindex #inicio {
+  background-image: url("https://www.primerahora.com/resizer/TlazC1SSrLbdoXgYwEF9qfjKddY=/2560x0/filters:quality(75):format(jpeg):focal(2807x466:2817x456)/cloudfront-us-east-1.images.arcpublishing.com/gfrmedia/RJJ6QAWQPNAAHPMMFIWZ3SZNHM.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
   grid-area: bienvenida;
   font-weight: bold;
   font-style: italic;
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  font-size: 5rem;
+  align-items: start;
+  font-size: 6rem;
 }
-#mainindex .escuchar-canciones p {
-  padding-right: 150px;
-}
-#mainindex .escuchar-canciones .btn-escuchar-canciones {
+#mainindex #inicio .btn-escuchar-canciones {
   font-size: 4rem;
-  color: whitesmoke;
-  padding-right: 300px;
 }
-#mainindex .escuchar-canciones .btn-escuchar-canciones:hover {
+#mainindex #inicio .btn-escuchar-canciones a {
+  color: white;
+}
+#mainindex #inicio .btn-escuchar-canciones a:hover {
   color: yellow;
 }
-#mainindex .escuchar-canciones .btn-comunidad {
+#mainindex #inicio .btn-comunidad {
   font-size: 4rem;
-  color: whitesmoke;
-  padding-right: 400px;
 }
-#mainindex .escuchar-canciones .btn-comunidad:hover {
+#mainindex #inicio .btn-comunidad a {
+  color: white;
+}
+#mainindex #inicio .btn-comunidad a:hover {
   color: yellow;
 }
-
-#maincomprar {
-  background-image: url("https://scontent.faep4-2.fna.fbcdn.net/v/t1.6435-9/129736807_868602833946450_7174310722850463643_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=9g5AN1YhtbsAX9z3i-k&_nc_ht=scontent.faep4-2.fna&oh=00_AfAw-IOQJ_Nsik5YzJC3kxqCuzgCh4_X9V1BRHojUZgYsg&oe=654EBA88");
+#mainindex #index-reproductor {
+  grid-area: reproductor;
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1VTDWL2PiFFy1SQ2EULDkpnUpSxpuluBT7KXNGWK_h6cvKVxXGhanM9NWO-uI8-USOG2M7Hx9gngD-tP-UZ8irc-47jNrPlhVZan9pbOyNQlB15WUOlZ3G_zN2lPASQLcZx4sK47ZSAVkHJ_mTLAu9qGm_dz29fJ3o6UMPWcm3PTIpf7Nnufd-B56Xw3o/s1999/unnamed%20-%202023-09-08T175548.963.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-#maincomprar .catalogoproductos {
+#mainindex #index-reproductor .catalogoproductos {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-#maincomprar .catalogoproductos #titulocatalgo {
+#mainindex #index-reproductor .catalogoproductos #titulocatalgo {
   width: 100%;
   text-align: center;
   font-weight: bold;
   margin: 30px;
   font-size: 3rem;
 }
-#maincomprar .card {
+#mainindex #index-reproductor .card {
   position: relative;
   width: 300px;
   height: 350px;
   margin: 20px;
   transition: transform 1s;
 }
-#maincomprar .card:hover {
+#mainindex #index-reproductor .card:hover {
   transform: scale(1.1) translateY(-40px);
 }
-#maincomprar .card .face {
+#mainindex #index-reproductor .card .face {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -147,15 +144,15 @@ body {
   border-radius: 10px;
   overflow: hidden;
 }
-#maincomprar .card .front {
+#mainindex #index-reproductor .card .front {
   box-shadow: 0 5px 10px #000;
 }
-#maincomprar .card .front img {
+#mainindex #index-reproductor .card .front img {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-#maincomprar .card .front p {
+#mainindex #index-reproductor .card .front p {
   font-style: italic;
   font-weight: bold;
   position: absolute;
@@ -168,13 +165,27 @@ body {
   text-align: center;
   border-radius: 10px;
 }
+#mainindex #index-comunidad {
+  grid-area: comunidad;
+  background-image: url("https://scontent.faep4-2.fna.fbcdn.net/v/t1.6435-9/129736807_868602833946450_7174310722850463643_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=9g5AN1YhtbsAX9z3i-k&_nc_ht=scontent.faep4-2.fna&oh=00_AfAw-IOQJ_Nsik5YzJC3kxqCuzgCh4_X9V1BRHojUZgYsg&oe=654EBA88");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 #footerindex {
   grid-area: footer;
   display: grid;
   grid-template-rows: 2fr, 1fr;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "reproducir redes contacto" "copy copy copy";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "logo reproducir redes contacto" "copy copy copy copy";
+}
+#footerindex .logo-footer {
+  display: flex;
+}
+#footerindex .logo-footer img {
+  height: 250px;
+  width: 450px;
+  padding-left: 150px;
 }
 #footerindex .reproducir-footer {
   grid-area: reproducir;
@@ -240,6 +251,15 @@ body {
   font-weight: bold;
   font-style: italic;
   font-size: 1.2rem;
+}
+#footerindex .volver-arriba {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+#footerindex .volver-arriba a {
+  color: white;
 }
 
 /* Escritorio primero o destok first */
