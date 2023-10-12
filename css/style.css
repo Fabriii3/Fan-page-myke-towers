@@ -47,7 +47,7 @@ body {
 }
 #headerindex nav a {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   font-style: italic;
 }
@@ -97,7 +97,7 @@ body {
 #mainindex .escuchar-canciones .btn-escuchar-canciones {
   font-size: 4rem;
   color: whitesmoke;
-  padding-right: 280px;
+  padding-right: 300px;
 }
 #mainindex .escuchar-canciones .btn-escuchar-canciones:hover {
   color: yellow;
@@ -187,11 +187,11 @@ body {
   font-style: italic;
 }
 #footerindex .reproducir-footer .titulo-reproducir {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 #footerindex .reproducir-footer li {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 #footerindex .reproducir-footer li:hover {
   color: yellow;
@@ -207,12 +207,12 @@ body {
   font-style: italic;
 }
 #footerindex .redes-footer .titulo-redes {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding-left: 50px;
 }
 #footerindex .redes-footer img {
-  width: 70px;
-  height: 50px;
+  width: 60px;
+  height: 40px;
 }
 #footerindex .contacto-footer {
   grid-area: contacto;
@@ -225,10 +225,10 @@ body {
   font-style: italic;
 }
 #footerindex .contacto-footer .titulo-contacto {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 #footerindex .contacto-footer li {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 #footerindex .copy-footer {
   grid-area: copy;
@@ -239,7 +239,7 @@ body {
   align-items: center;
   font-weight: bold;
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 /* Escritorio primero o destok first */
