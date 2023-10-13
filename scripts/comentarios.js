@@ -52,12 +52,12 @@ function limpiarComentarios(){
         mostrarError('El comentario no puede estar vacio');
         return;
     }
-    const objetoComentario = {
+    const objComentario = {
         id: Date.now(),
         texto: comentario
     }
- 
-    comentarios = [...comentarios, objetoComentario];
+
+    comentarios = [...comentarios, objComentario];
     formulario.reset();
     dibujarHTML();
 
@@ -65,7 +65,7 @@ function limpiarComentarios(){
 
 function borrarComentario(evento){
     evento.preventDefault();
-    const id = evt.target.parentElement.id;
+    const id = evento.target.parentElement.id;
     comentarios = comentarios.filter(comentario => comentario.id != id);
     dibujarHTML();
 }
