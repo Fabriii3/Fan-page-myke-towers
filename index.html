@@ -45,7 +45,7 @@
                  
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./index.html#index-comunidad">Comunidad</a>
+                  <a class="nav-link" href="./index.html#index-comunidad">Dejar Comentario</a>
                 </li>
                 <li class="nav-item">
                 <div id="switch-nav" class="form-check form-switch">
@@ -68,7 +68,7 @@
                <p class="btn-escuchar-canciones animate__animated animate__slideInRight" > 
                 <a href="./index.html#index-reproductor"> Escuchar Canciones </a></p>
                <p class="btn-comunidad animate__animated animate__slideInRight" > 
-                 <a  href="./index.html#index-comunidad"> Comunidad </a> </p>
+                 <a  href="./index.html#index-comunidad"> Dejar Comentario</a> </p>
           </section>
 
           <section id="index-reproductor">
@@ -145,7 +145,19 @@
           </section>
           
           <section id="index-comunidad">
-          
+            <div id="content">
+            <form id="formulario">
+              <label class="titulo-comentario">Dejar Comentario</label>
+              <textarea class="texarea" name="" id="comentario" 
+              cols="100" rows="6" placeholder="Escribe un mensaje para Mike , es completamente anonimo ..."></textarea>
+              <button class="personalizar-btn" type="submit">Enviar</button>
+          </form>
+
+         <div id="ver-comentarios">  
+          <p>Comentarios</p>
+         <ul id="lista-comentarios"></ul>
+        </div>
+      </div>
           </section>
           
      </main>
@@ -213,9 +225,7 @@
     crossorigin="anonymous"></script>
     <!-- js -->
     <script src="./scripts/btn.js"></script>
-    <script src="./scripts/bd.js"></script>
-    <script src="./scripts/main.js"></script>
-
+    <script src="./scripts/comentarios.js"></script>
   </body>
 </html>
 

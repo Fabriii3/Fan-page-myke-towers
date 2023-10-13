@@ -63,16 +63,15 @@ body {
 }
 
 #index-inicio {
-  height: 100vh;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "header header " "main main " "main main  " "footer footer";
+  grid-template-columns: 1fr;
+  grid-template-areas: "header " "main " "footer ";
 }
 
 #mainindex {
   grid-area: main;
   display: grid;
-  grid-template-rows: 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "bienvenida bienvenida" "reproductor reproductor" "comunidad comunidad ";
 }
@@ -170,6 +169,113 @@ body {
   background-image: url("https://scontent.faep4-2.fna.fbcdn.net/v/t1.6435-9/129736807_868602833946450_7174310722850463643_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=9g5AN1YhtbsAX9z3i-k&_nc_ht=scontent.faep4-2.fna&oh=00_AfAw-IOQJ_Nsik5YzJC3kxqCuzgCh4_X9V1BRHojUZgYsg&oe=654EBA88");
   background-repeat: no-repeat;
   background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "escribir " "ver ";
+}
+#mainindex #index-comunidad #content .error {
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  font-size: 2rem;
+}
+#mainindex #index-comunidad #content .borrar-comentario {
+  float: inline-end;
+  color: #A4161A;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+}
+#mainindex #index-comunidad #content #formulario {
+  grid-area: escribir;
+  font-weight: bold;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+#mainindex #index-comunidad #content #formulario .titulo-comentario {
+  font-size: 3rem;
+}
+#mainindex #index-comunidad #content #formulario .texarea {
+  margin: 10px;
+  border-radius: 10px;
+}
+#mainindex #index-comunidad #content #formulario .personalizar-btn {
+  font-size: 2rem;
+  border-radius: 10px;
+  border-radius: 10px solid black;
+  font-weight: bold;
+  font-style: italic;
+  margin: 10px;
+  padding: 10px;
+}
+#mainindex #index-comunidad #content #formulario .personalizar-btn:hover {
+  background-color: greenyellow;
+  color: black;
+  transition: transform 1s;
+  transform: scale(1.1);
+}
+#mainindex #index-comunidad #content #ver-comentarios {
+  grid-area: ver;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+#mainindex #index-comunidad #content #ver-comentarios p {
+  font-size: 3rem;
+}
+#mainindex #index-comunidad #content #ver-comentarios ul {
+  font-size: 1.5rem;
+}
+#mainindex #index-comunidad #formulario {
+  grid-area: escribir;
+  font-weight: bold;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+#mainindex #index-comunidad #formulario .titulo-comentario {
+  font-size: 3rem;
+}
+#mainindex #index-comunidad #formulario .texarea {
+  margin: 10px;
+  border-radius: 10px;
+}
+#mainindex #index-comunidad #formulario .personalizar-btn {
+  font-size: 2rem;
+  border-radius: 10px;
+  border-radius: 10px solid black;
+  font-weight: bold;
+  font-style: italic;
+  margin: 10px;
+  padding: 10px;
+}
+#mainindex #index-comunidad #formulario .personalizar-btn:hover {
+  background-color: greenyellow;
+  color: black;
+  transition: transform 1s;
+  transform: scale(1.1);
+}
+#mainindex #index-comunidad #ver-comentarios {
+  grid-area: ver;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+#mainindex #index-comunidad #ver-comentarios p {
+  font-size: 3rem;
+}
+#mainindex #index-comunidad #ver-comentarios ul {
+  font-size: 1.5rem;
 }
 
 #footerindex {

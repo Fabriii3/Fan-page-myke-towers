@@ -1,7 +1,7 @@
 #mainindex {
     grid-area:main;
     display: grid;
-    grid-template-rows: 2fr 2fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
     grid-template-columns: 1fr 1fr ;
     grid-template-areas: 
     "bienvenida bienvenida"
@@ -108,9 +108,124 @@
     background-image: url("https://scontent.faep4-2.fna.fbcdn.net/v/t1.6435-9/129736807_868602833946450_7174310722850463643_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=9g5AN1YhtbsAX9z3i-k&_nc_ht=scontent.faep4-2.fna&oh=00_AfAw-IOQJ_Nsik5YzJC3kxqCuzgCh4_X9V1BRHojUZgYsg&oe=654EBA88");
     background-repeat: no-repeat;
     background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr ;
+    grid-template-areas: 
+    "escribir "
+    "ver ";
     
+    #content{
+        .error {
+            text-align: center;
+            padding: 1rem;
+            @include fontbi;
+            color: white;
+            font-size: 2rem;
+            }
+            .borrar-comentario {
+            float: inline-end;
+            color: #A4161A;
+            @include fontbi;
+            cursor: pointer;
+        }
+
+        
+    #formulario {
+        grid-area:escribir;
+        @include fontbi ;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        .titulo-comentario{
+            font-size: 3rem;
+        }
+        .texarea{
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .personalizar-btn{
+            font-size: 2rem;
+            border-radius: 10px;
+            border-radius: 10px solid black;
+            @include fontbi ;
+            margin: 10px;
+            padding: 10px;
+            &:hover{
+                background-color: greenyellow;
+                color:black;
+                transition: transform 1s;
+                transform: scale(1.1) ;
+            }
+        
+        }
+     
+    }
+    #ver-comentarios{
+        grid-area:ver;
+        @include fontbi ;
+        text-align: center;
+        p{
+            font-size: 3rem;
+        }
+        ul{
+            font-size: 1.5rem;
+        }
+    }
+
+    }
     
+
+    #formulario {
+        grid-area:escribir;
+        @include fontbi ;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        .titulo-comentario{
+            font-size: 3rem;
+        }
+        .texarea{
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .personalizar-btn{
+            font-size: 2rem;
+            border-radius: 10px;
+            border-radius: 10px solid black;
+            @include fontbi ;
+            margin: 10px;
+            padding: 10px;
+            &:hover{
+                background-color: greenyellow;
+                color:black;
+                transition: transform 1s;
+                transform: scale(1.1) ;
+            }
+        
+        }
+     
+   
+
+    }
+    #ver-comentarios{
+        grid-area:ver;
+        @include fontbi ;
+        text-align: center;
+        p{
+            font-size: 3rem;
+        }
+        ul{
+            font-size: 1.5rem;
+        }
+    }
 }
+
+
 
 
 

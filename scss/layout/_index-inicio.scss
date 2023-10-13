@@ -1,11 +1,9 @@
 #index-inicio {
-  height: 100vh;
   display: grid;
-  grid-template-columns:repeat(2, 1fr);
+  grid-template-columns:1fr;
     grid-template-areas:
-    "header header "
-    "main main "
-    "main main  "
-    "footer footer";
+    "header "
+    "main "
+    "footer ";
   
 }
