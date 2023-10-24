@@ -11,8 +11,8 @@
 .logo-footer{
   display: flex;
   img{
-    height:250px;
-    width:450px;
+    height:200px;
+    width:500px;
     padding-left: 150px;
   }
 }
@@ -25,11 +25,7 @@
       font-size: 1.5rem;
     }
     li{
-      color: white;
       font-size: 1.2rem;
-      &:hover{
-        color:yellow;
-      }
     }
    }
 
@@ -69,8 +65,5 @@
     @include fontbi;
     font-size: 1.2rem;
     padding-left: 10px;
-    a{
-      color: white;
-    }
   }
 }

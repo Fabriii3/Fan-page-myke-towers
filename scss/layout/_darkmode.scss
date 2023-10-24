@@ -1,0 +1,35 @@
+:root {
+    --clr-bcg: white;
+    --clr-font: black;
+    --clr-hover: red;
+}
+
+.dark-mode {
+    --clr-bcg: black;
+    --clr-font: white;
+    --clr-hover: yellow;
+}
+
+body {
+    color: var(--clr-font);
+    background-color: var(--clr-bcg);
+}
+
+#headerindex nav a {
+    color: var(--clr-font);
+    &:hover{
+        color:var(--clr-hover);
+    }
+}
+
+.copy-footer a {
+    color: var(--clr-font);
+}
+
+.reproducir-footer a {
+    color: var(--clr-font);
+    &:hover{
+        color:var(--clr-hover);
+    }
+}
+

@@ -20,18 +20,38 @@ li {
 }
 
 :root {
-  --clr-bcg: #B1A7A6;
-  --clr-font: white;
+  --clr-bcg: white;
+  --clr-font: black;
+  --clr-hover: red;
 }
 
 .dark-mode {
   --clr-bcg: black;
   --clr-font: white;
+  --clr-hover: yellow;
 }
 
 body {
   color: var(--clr-font);
   background-color: var(--clr-bcg);
+}
+
+#headerindex nav a {
+  color: var(--clr-font);
+}
+#headerindex nav a:hover {
+  color: var(--clr-hover);
+}
+
+.copy-footer a {
+  color: var(--clr-font);
+}
+
+.reproducir-footer a {
+  color: var(--clr-font);
+}
+.reproducir-footer a:hover {
+  color: var(--clr-hover);
 }
 
 #headerindex {
@@ -46,16 +66,9 @@ body {
   width: 350px;
 }
 #headerindex nav a {
-  color: white;
   font-size: 1.2rem;
   font-weight: bold;
   font-style: italic;
-}
-#headerindex nav a:hover {
-  color: yellow;
-}
-#headerindex nav #switch-nav {
-  color: white;
 }
 #headerindex nav #switch-nav #sun-icon {
   position: relative;
@@ -87,6 +100,7 @@ body {
   justify-content: center;
   align-items: start;
   font-size: 6rem;
+  color: white;
 }
 #mainindex #inicio .btn-escuchar-canciones {
   font-size: 4rem;
@@ -124,6 +138,7 @@ body {
   font-weight: bold;
   margin: 30px;
   font-size: 3rem;
+  color: white;
 }
 #mainindex #index-reproductor .card {
   position: relative;
@@ -190,6 +205,7 @@ body {
   cursor: pointer;
 }
 #mainindex #index-comunidad #content #formulario {
+  color: white;
   grid-area: escribir;
   font-weight: bold;
   font-style: italic;
@@ -222,6 +238,7 @@ body {
   transform: scale(1.1);
 }
 #mainindex #index-comunidad #content #ver-comentarios {
+  color: white;
   grid-area: ver;
   font-weight: bold;
   font-style: italic;
@@ -231,50 +248,6 @@ body {
   font-size: 3rem;
 }
 #mainindex #index-comunidad #content #ver-comentarios ul {
-  font-size: 1.5rem;
-}
-#mainindex #index-comunidad #formulario {
-  grid-area: escribir;
-  font-weight: bold;
-  font-style: italic;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-}
-#mainindex #index-comunidad #formulario .titulo-comentario {
-  font-size: 3rem;
-}
-#mainindex #index-comunidad #formulario .texarea {
-  margin: 10px;
-  border-radius: 10px;
-}
-#mainindex #index-comunidad #formulario .personalizar-btn {
-  font-size: 2rem;
-  border-radius: 10px;
-  border-radius: 10px solid black;
-  font-weight: bold;
-  font-style: italic;
-  margin: 10px;
-  padding: 10px;
-}
-#mainindex #index-comunidad #formulario .personalizar-btn:hover {
-  background-color: greenyellow;
-  color: black;
-  transition: transform 1s;
-  transform: scale(1.1);
-}
-#mainindex #index-comunidad #ver-comentarios {
-  grid-area: ver;
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
-}
-#mainindex #index-comunidad #ver-comentarios p {
-  font-size: 3rem;
-}
-#mainindex #index-comunidad #ver-comentarios ul {
   font-size: 1.5rem;
 }
 
@@ -289,8 +262,8 @@ body {
   display: flex;
 }
 #footerindex .logo-footer img {
-  height: 250px;
-  width: 450px;
+  height: 200px;
+  width: 500px;
   padding-left: 150px;
 }
 #footerindex .reproducir-footer {
@@ -307,11 +280,7 @@ body {
   font-size: 1.5rem;
 }
 #footerindex .reproducir-footer li {
-  color: white;
   font-size: 1.2rem;
-}
-#footerindex .reproducir-footer li:hover {
-  color: yellow;
 }
 #footerindex .redes-footer {
   grid-area: redes;
@@ -363,9 +332,6 @@ body {
   font-style: italic;
   font-size: 1.2rem;
   padding-left: 10px;
-}
-#footerindex .volver-arriba a {
-  color: white;
 }
 
 /* Escritorio primero o destok first */

@@ -15,20 +15,15 @@
       
       nav {
         a{
-          color: white;
           font-size: 1.2rem;
           @include fontbi;
-          &:hover{
-            color:yellow;
-          }
         }
         #switch-nav{
-         color:white;
           #sun-icon{
               position: relative;
               right: 84px;
-          }
-      }
-  }
+            } 
+          } 
+        }
 
 }

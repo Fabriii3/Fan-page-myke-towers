@@ -19,6 +19,7 @@
     justify-content: center;
     align-items:start;
     font-size: 6rem;
+    color:white;
     .btn-escuchar-canciones{
         font-size: 4rem;
             a {
@@ -56,6 +57,7 @@
          font-weight: bold;
          margin: 30px;
          font-size: 3rem;
+         color: white;
     }
    }
  
@@ -132,6 +134,7 @@
 
         
     #formulario {
+        color: white;
         grid-area:escribir;
         @include fontbi ;
         display: flex;
@@ -164,6 +167,7 @@
      
     }
     #ver-comentarios{
+        color: white;
         grid-area:ver;
         @include fontbi ;
         text-align: center;
@@ -177,62 +181,7 @@
 
     }
     
-
-    #formulario {
-        grid-area:escribir;
-        @include fontbi ;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-        .titulo-comentario{
-            font-size: 3rem;
-        }
-        .texarea{
-            margin: 10px;
-            border-radius: 10px;
-        }
-        .personalizar-btn{
-            font-size: 2rem;
-            border-radius: 10px;
-            border-radius: 10px solid black;
-            @include fontbi ;
-            margin: 10px;
-            padding: 10px;
-            &:hover{
-                background-color: greenyellow;
-                color:black;
-                transition: transform 1s;
-                transform: scale(1.1) ;
-            }
-        
-        }
-     
-   
-
-    }
-    #ver-comentarios{
-        grid-area:ver;
-        @include fontbi ;
-        text-align: center;
-        p{
-            font-size: 3rem;
-        }
-        ul{
-            font-size: 1.5rem;
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
+ }
 
 
 }
