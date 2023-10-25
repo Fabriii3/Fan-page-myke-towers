@@ -2,16 +2,24 @@ const listaComentarios = document.querySelector('#lista-comentarios');
 const formulario = document.querySelector('#formulario');
 let comentarios = [];
 
-function mostrarError(msg){
-    const mensajeError = document.createElement('p');
-    mensajeError.textContent = msg;
-    mensajeError.classList.add('error')
-    const modal = document.querySelector('#content');
-    modal.appendChild(mensajeError);
-
-    setTimeout(()=>{
-        mensajeError.remove()
-    },3000)
+function mostrarError(){
+    Toastify({
+        text: "El comentario no puede estar vacio",
+        duration: 3000,
+        newWindow: true,
+        close: false,
+        gravity: "top", 
+        position: "center",
+        stopOnFocus: true, 
+        style: {
+          background: "#E5383B",
+          borderRadius: "20px",
+          fontSize:"1.2rem",
+          fontWeight: "bold",
+          fontStyle: "italic"
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
 }
 
 function dibujarHTML(){
@@ -44,12 +52,11 @@ function limpiarComentarios(){
     evento.preventDefault();
 
 
-
     const comentario = document.querySelector('#comentario').value;
 
     if(comentario === ''){
 
-        mostrarError('El comentario no puede estar vacio');
+        mostrarError();
         return;
     }
     const objComentario = {

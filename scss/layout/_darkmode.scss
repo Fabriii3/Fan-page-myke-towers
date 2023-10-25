@@ -1,7 +1,7 @@
 :root {
     --clr-bcg: white;
     --clr-font: black;
-    --clr-hover: red;
+    --clr-hover: #E5383B;
 }
 
 .dark-mode {
@@ -22,6 +22,14 @@ body {
     }
 }
 
+
+#inicio a{
+    color: white;
+    &:hover{
+        color:var(--clr-hover);
+    }
+}
+
 .copy-footer a {
     color: var(--clr-font);
 }
@@ -32,4 +40,5 @@ body {
         color:var(--clr-hover);
     }
 }
+
 

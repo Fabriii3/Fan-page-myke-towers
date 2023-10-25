@@ -22,7 +22,7 @@ li {
 :root {
   --clr-bcg: white;
   --clr-font: black;
-  --clr-hover: red;
+  --clr-hover: #E5383B;
 }
 
 .dark-mode {
@@ -40,6 +40,13 @@ body {
   color: var(--clr-font);
 }
 #headerindex nav a:hover {
+  color: var(--clr-hover);
+}
+
+#inicio a {
+  color: white;
+}
+#inicio a:hover {
   color: var(--clr-hover);
 }
 
@@ -105,20 +112,8 @@ body {
 #mainindex #inicio .btn-escuchar-canciones {
   font-size: 4rem;
 }
-#mainindex #inicio .btn-escuchar-canciones a {
-  color: white;
-}
-#mainindex #inicio .btn-escuchar-canciones a:hover {
-  color: yellow;
-}
 #mainindex #inicio .btn-comunidad {
   font-size: 4rem;
-}
-#mainindex #inicio .btn-comunidad a {
-  color: white;
-}
-#mainindex #inicio .btn-comunidad a:hover {
-  color: yellow;
 }
 #mainindex #index-reproductor {
   grid-area: reproductor;
