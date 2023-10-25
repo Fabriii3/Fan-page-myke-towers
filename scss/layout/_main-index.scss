@@ -1,12 +1,12 @@
 #mainindex {
     grid-area:main;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr ;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-rows:repeat(3,1fr) ;
+    grid-template-columns: 1fr  ;
     grid-template-areas: 
-    "bienvenida bienvenida"
-    "reproductor reproductor"
-    "comunidad comunidad " ;
+    "bienvenida"
+    "reproductor "
+    "comunidad  " ;
 
 #inicio {
     background-image: url("https://www.primerahora.com/resizer/TlazC1SSrLbdoXgYwEF9qfjKddY=/2560x0/filters:quality(75):format(jpeg):focal(2807x466:2817x456)/cloudfront-us-east-1.images.arcpublishing.com/gfrmedia/RJJ6QAWQPNAAHPMMFIWZ3SZNHM.JPG");
@@ -20,13 +20,16 @@
     align-items:start;
     font-size: 6rem;
     color:white;
+    p{
+        margin-left: 50px;
+    }
     .btn-escuchar-canciones{
-        font-size: 4rem;
+        @include inicio;
         }
     .btn-comunidad{
-        font-size: 4rem;
-    }
-}
+       @include inicio;
+     }
+  }
 
 #index-reproductor{
     grid-area:reproductor;
@@ -88,10 +91,8 @@
                 border-radius: 10px;
              }
           }
+       }
     }
-    
- 
- }
    
  #index-comunidad {
     grid-area:comunidad;
@@ -106,15 +107,7 @@
     "ver ";
     
     #content{
-        .error {
-            text-align: center;
-            padding: 1rem;
-            @include fontbi;
-            color: white;
-            font-size: 2rem;
-            }
             .borrar-comentario {
-            float: inline-end;
             color: #A4161A;
             @include fontbi;
             cursor: pointer;
@@ -154,22 +147,21 @@
         }
      
     }
+     
     #ver-comentarios{
         color: white;
         grid-area:ver;
         @include fontbi ;
         text-align: center;
-        p{
+         p{
             font-size: 3rem;
-        }
-        ul{
+          }
+          ul{
             font-size: 1.5rem;
-        }
-    }
-
-    }
+         }
+       }
     
- }
 
-
+    }
+  }
 }

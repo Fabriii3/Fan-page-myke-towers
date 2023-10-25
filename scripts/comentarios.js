@@ -18,7 +18,7 @@ function mostrarError(){
           fontWeight: "bold",
           fontStyle: "italic"
         },
-        onClick: function(){} // Callback after click
+        onClick: function(){} 
       }).showToast();
 }
 
@@ -68,6 +68,25 @@ function limpiarComentarios(){
     formulario.reset();
     dibujarHTML();
 
+    Toastify({
+        text: "Comentario enviado",
+        duration: 2000,
+        newWindow: true,
+        close: false,
+        gravity: "top", 
+        position: "center",
+        stopOnFocus: true, 
+        style: {
+          background: "greenyellow",
+          color:"black",
+          borderRadius: "20px",
+          fontSize:"1.2rem",
+          fontWeight: "bold",
+          fontStyle: "italic"
+        },
+        onClick: function(){} 
+      }).showToast();
+
 } 
 
 function borrarComentario(evento){
@@ -75,6 +94,24 @@ function borrarComentario(evento){
     const id = evento.target.parentElement.id;
     comentarios = comentarios.filter(comentario => comentario.id != id);
     dibujarHTML();
+
+    Toastify({
+        text: "Comentario eliminado",
+        duration: 2000,
+        newWindow: true,
+        close: false,
+        gravity: "top", 
+        position: "center",
+        stopOnFocus: true, 
+        style: {
+          background: "#E5383B",
+          borderRadius: "20px",
+          fontSize:"1.2rem",
+          fontWeight: "bold",
+          fontStyle: "italic"
+        },
+        onClick: function(){} 
+      }).showToast();
 }
 
 function sincronizarStorage(){

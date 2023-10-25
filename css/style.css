@@ -44,7 +44,12 @@ body {
 }
 
 #inicio a {
-  color: white;
+  margin-left: 50px;
+  font-size: 3rem;
+  padding: 3px;
+  border-radius: 15px;
+  color: var(--clr-font);
+  background-color: var(--clr-bcg);
 }
 #inicio a:hover {
   color: var(--clr-hover);
@@ -91,9 +96,9 @@ body {
 #mainindex {
   grid-area: main;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "bienvenida bienvenida" "reproductor reproductor" "comunidad comunidad ";
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-areas: "bienvenida" "reproductor " "comunidad  ";
 }
 #mainindex #inicio {
   background-image: url("https://www.primerahora.com/resizer/TlazC1SSrLbdoXgYwEF9qfjKddY=/2560x0/filters:quality(75):format(jpeg):focal(2807x466:2817x456)/cloudfront-us-east-1.images.arcpublishing.com/gfrmedia/RJJ6QAWQPNAAHPMMFIWZ3SZNHM.JPG");
@@ -109,11 +114,20 @@ body {
   font-size: 6rem;
   color: white;
 }
+#mainindex #inicio p {
+  margin-left: 50px;
+}
 #mainindex #inicio .btn-escuchar-canciones {
-  font-size: 4rem;
+  margin-left: 50px;
+  font-size: 3rem;
+  padding: 3px;
+  border-radius: 15px;
 }
 #mainindex #inicio .btn-comunidad {
-  font-size: 4rem;
+  margin-left: 50px;
+  font-size: 3rem;
+  padding: 3px;
+  border-radius: 15px;
 }
 #mainindex #index-reproductor {
   grid-area: reproductor;
@@ -184,16 +198,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-areas: "escribir " "ver ";
 }
-#mainindex #index-comunidad #content .error {
-  text-align: center;
-  padding: 1rem;
-  font-weight: bold;
-  font-style: italic;
-  color: white;
-  font-size: 2rem;
-}
 #mainindex #index-comunidad #content .borrar-comentario {
-  float: inline-end;
   color: #A4161A;
   font-weight: bold;
   font-style: italic;

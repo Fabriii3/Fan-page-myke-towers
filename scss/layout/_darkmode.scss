@@ -22,13 +22,22 @@ body {
     }
 }
 
-
 #inicio a{
-    color: white;
+    @include inicio ;
+    color: var(--clr-font);
+    background-color: var(--clr-bcg);
     &:hover{
         color:var(--clr-hover);
-    }
+  }
 }
+
+
+// #inicio a{
+//     color: white;
+//     &:hover{
+//         color:var(--clr-hover);
+//     }
+// }
 
 .copy-footer a {
     color: var(--clr-font);
