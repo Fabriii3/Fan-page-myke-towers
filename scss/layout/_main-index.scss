@@ -31,7 +31,7 @@
      }
   }
 
-#index-reproductor{
+#index-reproductor {
     grid-area:reproductor;
     background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1VTDWL2PiFFy1SQ2EULDkpnUpSxpuluBT7KXNGWK_h6cvKVxXGhanM9NWO-uI8-USOG2M7Hx9gngD-tP-UZ8irc-47jNrPlhVZan9pbOyNQlB15WUOlZ3G_zN2lPASQLcZx4sK47ZSAVkHJ_mTLAu9qGm_dz29fJ3o6UMPWcm3PTIpf7Nnufd-B56Xw3o/s1999/unnamed%20-%202023-09-08T175548.963.jpg");
     background-repeat: no-repeat;
@@ -41,7 +41,6 @@
          display: flex;
         flex-wrap: wrap;
         justify-content: center;
- 
      #titulocatalgo {
          width: 100%;
          text-align: center;
@@ -49,12 +48,15 @@
          margin: 30px;
          font-size: 3rem;
          color: white;
-    }
-   }
+        }
+      }
  
    #buscar-cancion{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
     form{
-        input{
+      #inputBuscar{
         height: 55px;
         width: 800px;
         padding: 20px;
@@ -62,33 +64,14 @@
         border-radius: 20px;
         margin: 20px;
         }
-        // .boton{
-        //     background-color:white;
-        //     padding: 20px;
-        //     border-radius: 10px;
-        //     border: 2px solid black;
-        //     color: black;
-        // }
-    }
-
-    .volumen-canciones{
-        display: flex;
-        align-items: center;
-        .carritofavs{
-            height: 50px;
-            width: 70px;
-        }
-       p {
-        @include fontbi;
-        font-size: 20px;
-        color: white;
-        text-align: center;
-        padding: 10px;
-       }
     }
   }
+  
  #canciones {
-    display: flex; 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; 
   .canciones-box{
     display: flex;
     flex-direction: column;
@@ -97,42 +80,115 @@
     border-radius:30px;
     margin: 20px ;  
     .nombre-cancion {
-     font-size: 1.3rem;
-     font-style: italic;
-     font-weight: bold;
+     font-size: 1.5rem;
+     @include fontbi;
     color:black;
     padding-top: 20px;
    }
   .imagen-cancion{
-        width: 300px;
-        height: 250px;
-        margin: 15px;
+        width: 400px;
+        height: 300px;
+        margin: 20px;
         object-fit: cover;
       }
+     
       .botones-reproductor {
         display: flex;
         flex-direction: row;
-        .play{
-            background-color: green;
-            height: 30px;
-            width: 30px;
-        }
-        .stop{
-            background-color: yellow;
-            height: 30px;
-            width: 30px;
-        }
-        .favorito{
-            background-color: red;
-            height: 30px;
-            width: 30px;
-        }
-      }
+        background-color: blck;
+        border-radius: 30px;
+        padding: 10px;
+        margin: 10px;
+        font-size: 2rem;
+        // .play {
+        //     font-size: 1.7rem;
+        // } 
+        // .stop {
+        //     font-size: 1.7rem;
+        // }
+        // .favorito{
+        //     font-size: 1.7rem;
+  
+        // }
+       }
+     }
+    }
 
-  }
+    aside{
+      .btn-favs{
+        position: fixed;
+        box-shadow: -6px -2px 25px -13px rgba(0, 0, 0, 0.15);
+        width: 340px;
+        height: 100%;
+        top: 0;
+        right: 0;
+        padding: 30px;
+        transition: all 0.2s;
+        background-color: green;
+      }
+      
+      .favoritos {
+        position: absolute;
+        top: 20px;
+        right: 360px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+        background: url("../assets/images/fav.svg") no-repeat red;
+        background-size: 60%;
+        background-position: 9px center;
+      }
+    
+      .btnAgregar,
+      .btnQuitar,
+      .boton {
+        color: rgb(0, 0, 0);
+        background-color: #ed2424;
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px 0;
+        transition: all 0.2s;
+        cursor: pointer;
+      }
+      
+      .btnAgregar:hover,
+      .btnQuitar:hover,
+      .boton:hover {
+        border: 1px solid white;
+        scale: 1.05;
+      }
+      .boton.seleccionado {
+        border: 4px solid white;
+        background-color: #d15280;
+      } 
+      .productoCarrito {
+        padding: 10px 0;
+        margin-bottom: 10px;
+        line-height: 24px;
+      }
+      .productoCarrito h2 {
+        margin-bottom: 8px;
+      }
+      .ocultar {
+        right: -340px;
+        transition: all 0.2s;
+      }
+      #scroll {
+        max-height: 96%;
+        overflow-y: auto;
+        padding-left: 5px;
+      }
+    
+    }
  }
 }
-   
+
  #index-comunidad {
     grid-area:comunidad;
     background-image: url("https://scontent.faep4-2.fna.fbcdn.net/v/t1.6435-9/129736807_868602833946450_7174310722850463643_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=9g5AN1YhtbsAX9z3i-k&_nc_ht=scontent.faep4-2.fna&oh=00_AfAw-IOQJ_Nsik5YzJC3kxqCuzgCh4_X9V1BRHojUZgYsg&oe=654EBA88");
@@ -203,4 +259,3 @@
 
     }
   }
-}

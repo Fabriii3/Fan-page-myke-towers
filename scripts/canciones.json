@@ -1,62 +1,72 @@
 [
-    {
-      "id": 1,
-      "nombre": "almas gemelas",
-      "categoria": "canciones",
-      "imagen": "almagemela.png"
+  {
+    "id": 1,
+    "nombre": "Almas Gemelas",
+    "categoria": "almagemela",
+    "imagen": "almagemela.png",
+    "audio":"almagemela.mp3"
+  },
+  {
+    "id": 2,
+    "nombre": "Bandido",
+    "categoria": "bandido",
+    "imagen": "bandido.png",
+    "audio":"bandido.mp3"
+  },
+  {
+    "id": 3,
+    "nombre": "Curiosidad",
+    "categoria": "curiosidad",
+    "imagen": "curiosidad.png",
+    "audio":"curiosidad.mp3"
+  },
+  {
+    "id": 4,
+    "nombre": "Fiel",
+    "categoria": "fiel",
+    "imagen": "fiel.png",
+    "audio":"fiel.mp3"
+  },
+  {
+    "id": 5,
+    "nombre": "La Forma en Que Me Miras",
+    "categoria": "laformamemiras",
+    "imagen": "laformamemiras.png",
+    "audio":"laformamemiras.mp3"
+  },
+  {
+      "id": 6,
+      "nombre": "Mirame",
+      "categoria": "mirame",
+      "imagen": "mirame.png",
+      "audio":"mirame.mp3"
     },
     {
-      "id": 2,
-      "nombre": "bandido",
-      "categoria": "canciones",
-      "imagen": "bandido.png"
+      "id": 7,
+      "nombre": "Madrid",
+      "categoria": "madrid",
+      "imagen": "madrid.png",
+    "audio":"madrid.mp3"
     },
     {
-      "id": 3,
-      "nombre": "curiosidad",
-      "categoria": "canciones",
-      "imagen": "curiosidad.png"
+      "id": 8,
+      "nombre": "Piensan",
+      "categoria": "piensan",
+      "imagen": "piensan.png",
+      "audio":"piensan.mp3"
     },
     {
-      "id": 4,
-      "nombre": "fiel",
-      "categoria": "canciones",
-      "imagen": "fiel.png"
+      "id": 9,
+      "nombre": "Polvo",
+      "categoria": "polvo",
+      "imagen": "polvo.png",
+      "audio":"polvo.mp3"
     },
-    {
-      "id": 5,
-      "nombre": "la forma en que me miras",
-      "categoria": "canciones",
-      "imagen": "laformamemiras.png"
-    },
-    {
-        "id": 6,
-        "nombre": "mirame",
-        "categoria": "canciones",
-        "imagen": "mirame.png"
-      },
-      {
-        "id": 7,
-        "nombre": "madrid",
-        "categoria": "canciones",
-        "imagen": "madrid.png"
-      },
-      {
-        "id": 8,
-        "nombre": "piensan",
-        "categoria": "canciones",
-        "imagen": "piensan.png"
-      },
-      {
-        "id": 9,
-        "nombre": "polvo",
-        "categoria": "canciones",
-        "imagen": "polvo.png"
-      },
-    {
-      "id": 10,
-      "nombre": "si se da",
-      "categoria": "canciones",
-      "imagen": "siseda.png"
-    }]
-   
+  {
+    "id": 10,
+    "nombre": "Si Se Da",
+    "categoria": "siseda",
+    "imagen": "siseda.png",
+    "audio":"siseda.mp3"
+  }]
+ 
