@@ -164,7 +164,7 @@ body {
 }
 #mainindex #index-reproductor #canciones {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
@@ -184,9 +184,9 @@ body {
   padding-top: 20px;
 }
 #mainindex #index-reproductor #canciones .canciones-box .imagen-cancion {
-  width: 400px;
-  height: 300px;
-  margin: 20px;
+  width: 350px;
+  height: 270px;
+  margin: 10px;
   object-fit: cover;
 }
 #mainindex #index-reproductor #canciones .canciones-box .botones-reproductor {
