@@ -68,5 +68,21 @@
     "categoria": "siseda",
     "imagen": "siseda.png",
     "audio":"siseda.mp3"
+  }
+  ,
+  {
+    "id": 11,
+    "nombre": "La Jepeeta",
+    "categoria": "lajepeta",
+    "imagen": "lajepeta.png",
+    "audio":"lajepeta.mp3"
+  }
+  ,
+  {
+    "id": 12,
+    "nombre": "Caramelo",
+    "categoria": "caramelo",
+    "imagen": "caramelo.png",
+    "audio":"caramelo.mp3"
   }]
  
