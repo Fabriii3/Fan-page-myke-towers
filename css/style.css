@@ -209,6 +209,7 @@ body {
   transition: all 0.2s;
   cursor: pointer;
   color: black;
+  border: gainsboro;
 }
 #mainindex #index-reproductor #canciones .canciones-box .botones-reproductor .stop {
   background-color: gainsboro;
@@ -220,6 +221,7 @@ body {
   transition: all 0.2s;
   cursor: pointer;
   color: black;
+  border: gainsboro;
 }
 #mainindex #index-reproductor .btn-favs {
   position: fixed;
@@ -259,12 +261,7 @@ body {
   transition: all 0.2s;
   cursor: pointer;
   color: black;
-}
-#mainindex #index-reproductor .btnAgregar:hover,
-#mainindex #index-reproductor .btnQuitar:hover,
-#mainindex #index-reproductor .boton:hover {
-  border: 1px solid white;
-  scale: 1.05;
+  border: gainsboro;
 }
 #mainindex #index-reproductor .productoCarrito {
   padding: 10px 0;
